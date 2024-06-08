@@ -1,6 +1,6 @@
-function Get-AltTab {
+function Invoke-AltTab {
     $(New-Object -ComObject WSCript.Shell).SendKeys("%{Tab}")
     Start-Sleep $(Get-Random -Minimum 30 -Maximum 180)
-    Get-AltTab
+    Invoke-AltTab
 }
-Get-AltTab
+Invoke-AltTab
